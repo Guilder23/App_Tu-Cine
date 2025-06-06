@@ -1,0 +1,2 @@
+C:/Users/Tommy/Desktop/cine/code_warriors_gs/android/app/.cxx/RelWithDebInfo/4i3u5c2w/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/Tommy/Desktop/cine/code_warriors_gs/android/app/.cxx/RelWithDebInfo/4i3u5c2w/armeabi-v7a/CMakeFiles/rebuild_cache.dir

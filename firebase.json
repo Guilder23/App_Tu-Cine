@@ -1,0 +1,35 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "cine-ff4b1",
+          "appId": "1:678520327474:android:3f0414f4f9f30d3637db2b",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "cine-ff4b1",
+          "configurations": {
+            "android": "1:678520327474:android:3f0414f4f9f30d3637db2b",
+            "ios": "1:678520327474:ios:5da9112239b45e7237db2b",
+            "web": "1:678520327474:web:c581afc5093fa22637db2b"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {},
+  "emulators": {
+    "dataconnect": {
+      "dataDir": "dataconnect/.dataconnect/pgliteData"
+    }
+  },
+  "dataconnect": {
+    "source": "dataconnect"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}

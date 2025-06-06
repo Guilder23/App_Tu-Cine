@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "678520327474",
+    "project_id": "cine-ff4b1",
+    "storage_bucket": "cine-ff4b1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678520327474:android:3f0414f4f9f30d3637db2b",
+        "android_client_info": {
+          "package_name": "code.warriors.gs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678520327474-7d5t9kv0nbhro13tf39eqi504vf90v6n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "code.warriors.gs",
+            "certificate_hash": "9e211a58de8c707955e07d905ada083523d4354e"
+          }
+        },
+        {
+          "client_id": "678520327474-cbiakhdp8nbohpkvf5kih12u95rvvakk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfJTA_AIH8rVPV2Jo6eCPX8BJE8JV-2fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678520327474-cbiakhdp8nbohpkvf5kih12u95rvvakk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678520327474-6l5vth1ror6nvvnl326a3t7p7qsijho3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.proyectoCine"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Regla para usuarios: acceso completo a su propio documento
+    match /users/{userId} {
+      // Permitir lectura a todos los usuarios autenticados
+      allow read: if request.auth != null;
+      
+      // Permitir escritura si:
+      // 1. El usuario está creando su propio documento (registro nuevo)
+      // 2. El usuario está editando su propio documento (ya existente)
+      // 3. Regla especial para usuarios nuevos de Google Sign-In
+      allow write: if 
+        request.auth != null && (
+          request.auth.uid == userId || 
+          request.resource.data.uid == userId ||
+          request.resource.data.email == request.auth.token.email
+        );
+    }
+    
+    // Regla general para otras colecciones
+    match /{document=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+  }
+}
