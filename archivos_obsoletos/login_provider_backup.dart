@@ -228,7 +228,7 @@ class LoginProvider extends ChangeNotifier {
                 (user.displayName ?? 'googleuser').toLowerCase(),
             'email': user.email ?? '',
             'imageUser': user.photoURL ?? 'assets/images/avatar3.png',
-            'biografia': '¡Hola! Soy nuevo en CodeWarriors',
+            'biografia': '¡Hola! Soy nuevo',
             'birth': '',
             'edad': '0',
             'createdAt': DateTime.now().toString(),

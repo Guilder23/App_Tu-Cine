@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "code_warriors",
+            "name": "cine",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "code_warriors (profile mode)",
+            "name": "cine (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "code_warriors (release mode)",
+            "name": "cine (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

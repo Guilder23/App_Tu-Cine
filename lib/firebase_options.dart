@@ -70,8 +70,6 @@ class DefaultFirebaseOptions {
     projectId: 'cine-ff4b1',
     storageBucket: 'cine-ff4b1.firebasestorage.app',
     androidClientId: '678520327474-7d5t9kv0nbhro13tf39eqi504vf90v6n.apps.googleusercontent.com',
-    iosClientId: '678520327474-qhr3rim33kpqbci7peb7f5jkqsgd4bk4.apps.googleusercontent.com',
-    iosBundleId: 'com.example.codeWarriors',
   );
 
 }

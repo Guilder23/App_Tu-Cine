@@ -351,7 +351,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           child: Column(
                             children: [
                               InputDecorationWidget(
-                                hintText: "codeWarrios25",
+                                hintText: "cinefilo123",
                                 labelText: "Ingresa tu nombre de usuario",
                                 suffixIcon: const Icon(
                                   Icons.person,
@@ -363,7 +363,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               ),
                               const SizedBox(height: 20),
                               InputDecorationWidget(
-                                hintText: "CodeWarrios@gmail.com",
+                                hintText: "ejemplo@gmail.com",
                                 labelText: "Ingresa tu email o usuario",
                                 suffixIcon: const Icon(
                                   Icons.email,
