@@ -13,7 +13,7 @@ class BoleteriaPageFixed extends StatefulWidget {
   @override
   State<BoleteriaPageFixed> createState() => _BoleteriaPageFixedState();
 }
-
+    
 class _BoleteriaPageFixedState extends State<BoleteriaPageFixed> {
   int selectedDay = DateTime.now().day;
   String selectedTime = '';
@@ -33,7 +33,7 @@ class _BoleteriaPageFixedState extends State<BoleteriaPageFixed> {
     _timeUpdateTimer?.cancel();
     super.dispose();
   }
-
+     
   // Función para cargar butacas reservadas desde Firestore en tiempo real
   void _subscribeToReservations(
       String movieId, String selectedDate, String selectedTime) {
@@ -43,7 +43,7 @@ class _BoleteriaPageFixedState extends State<BoleteriaPageFixed> {
     setState(() {
       isLoadingSeats = true;
     });
-
+     
     // Crear stream para escuchar cambios en tiempo real
     _reservationsStream = FirebaseFirestore.instance
         .collection('reservations')
