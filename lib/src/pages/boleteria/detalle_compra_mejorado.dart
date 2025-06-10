@@ -126,9 +126,9 @@ class _DetalleCompraMejoradoState extends State<DetalleCompraMejorado> {
       ),
     );
   }
-
+            
   // Función para crear productos de prueba
-  Future<void> _crearProductosDePrueba() async {
+   Future<void> _crearProductosDePrueba() async {
     try {
       print('Creando productos de prueba...');
       final productosRef = FirebaseFirestore.instance.collection('productos');
@@ -167,14 +167,14 @@ class _DetalleCompraMejoradoState extends State<DetalleCompraMejorado> {
           'id_usuario': 'test_user_123',
         },
       ];
-
+     
       for (var producto in productosPrueba) {
         final docRef = productosRef.doc();
         producto['id'] = docRef.id;
         await docRef.set(producto);
         print('Producto creado: ${producto['nombre']}');
       }
-
+            
       print('Productos de prueba creados exitosamente');
     } catch (e) {
       print('Error al crear productos de prueba: $e');
@@ -190,7 +190,7 @@ class _DetalleCompraMejoradoState extends State<DetalleCompraMejorado> {
           isLoadingProducts = true;
         });
       }
-
+                  
       // Referencia a la colección de productos
       final productosRef = FirebaseFirestore.instance.collection('productos');
 
@@ -209,7 +209,7 @@ class _DetalleCompraMejoradoState extends State<DetalleCompraMejorado> {
 
       print(
           'Consulta a Firestore completada. Documentos encontrados: ${productSnapshot.docs.length}');
-
+                  
       if (productSnapshot.docs.isEmpty) {
         print('No se encontraron productos, creando productos de prueba...');
         await _crearProductosDePrueba();
